@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>R.D MOTORS</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <section class="header">
+    <nav class="navbar fixed-top">
+      <a href="index.html"><img src="./image/rdlogo.png" alt=""></a>
+      <div class="nav-link" id="navlinks">
+        <i class="fa fa-times" onclick="hidemanu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">SERVICES</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">LOGIN</a></li>
+          <li><a href="">SIGN-UP</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmanu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>WELCOME TO R.D MOTORS</h1>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+      <a href="" class="btn">Visit Us To Konw More</a>
+    </div>
+  </section>
+
+  <section class="service">
+    <h1>Our Serives</h1>
+    <p>complate car care and all type to service available</p>
+    <div class="row">
+      <div class="service-col">
+        <h1>periodic service</h1>
+        <img class="image1" src="./image/serivces/car spa & cleaning.png" alt="">
+      </div>
+      <div class="service-col">
+        <h1>insurance</h1>
+        <img class="image1" src="./image/serivces/cleaning-detailing.png" alt="">
+      </div>
+      <div class="service-col">
+        <h1>custome</h1>
+        <img class="image1" src="./image/serivces/clutch & fitments.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="service-col">
+        <h1>periodic service</h1>
+        <img class="image1" src="./image/serivces/custome services.png" alt="">
+      </div>
+      <div class="service-col">
+        <h1>insurance</h1>
+        <img class="image1" src="./image/serivces/denting-painting.png" alt="">
+      </div>
+      <div class="service-col">
+        <h1>custome</h1>
+        <img class="image1" src="./image/serivces/insurance.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="service-col">
+        <h1>periodic service</h1>
+        <img class="image1" src="./image/serivces/miles membership.png" alt="">
+      </div>
+      <div class="service-col">
+        <h1>insurance</h1>
+        <img class="image1" src="./image/serivces/tyre.png" alt="">
+      </div>
+      <div class="service-col">
+        <h1>custome</h1>
+        <img class="image1" src="./image/serivces/schedule-services.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="service-col">
+        <h1>insurance</h1>
+        <img class="image1" src="./image/serivces/windshields & lights.png" alt="">
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+
+
+
+  <script>
+    var navlinks = document.getElementById("navlinks");
+    // var navlinks = document.getElementsById("navlinks");
+
+    function showmanu(){
+      navlinks.style.right = "0";
+    }
+    function hidemanu(){
+      navlinks.style.right="-200px";
+    }
+  </script>
+  <script>
+    $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+        $('nav').addClass('white');
+      }
+      else{
+        $('nav').removeClass('white');
+      }
+    })
+  </script>
+  
+</body>
+</html>
